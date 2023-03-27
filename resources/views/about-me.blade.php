@@ -18,25 +18,11 @@
   <title>About Laravel P.P.</title>
 </head>
 <body>
-  <header>
-    <nav class="navbar navbar-expand-lg bg-light">
-      <div class="container-fluid">
-        <h3 class="navbar-brand mt-5">Laravel</h3>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="{{ route('homepage')}}">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="{{ route('about')}}">About Me</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-  </header>
+  @include("includes.header")
+  <main>
+    <div class="container">
+    <h1>Ciao, sono {{$creator}}, è la prima volta che uso Laravel.</h1>
+  </div>
+</main>
 </body>
 </html>
